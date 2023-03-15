@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In|Log In</title>
+    <link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet">
+    <link rel="stylesheet">
+</head>
+<style>
+
+.hero{
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+.form-box{
+    width: 360px;
+    height: 480px;
+    position: relative;
+    margin: 6% auto;
+    background: rgba(45, 48, 53, 0.933);
+    padding: 5px;
+    border-radius: 10px;
+}
+.button-box{
+    width: 220px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #0a4cb01f;
+    border-radius: 30px;
+}
+.toggle-btn{
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+}
+.btn{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: linear-gradient(to right, #ff105f, #ffad06);
+    border-radius: 30px;
+    transition: 0.5s;
+    
+}
+.social-icons{
+    margin: 30px auto;
+    text-align: center;
+}
+.social-icons img{
+     width: 30px;
+     margin: 0 12px;
+     box-shadow: 0 0 20px 0 #7f7f7f3d;
+     cursor: pointer;
+     border-radius: 50%;
+}
+.input-group{
+    top: 180px;
+    position: absolute;
+    width: 280px;
+    transform: .5s;
+}
+.input-feild{
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+}
+.submit-btn{
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: linear-gradient(to right, #172435, #110f0d);
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+}
+.chech-box{
+    margin: 30px 10px 30px 0;
+}
+span{
+    color: rgb(21, 21, 21);
+    font-size: 12px;
+    bottom: 68px;
+    position: absolute;
+}
+
+    .header{
+        height: 120px;
+        background: rgba(7,7,7,7);
+        width: 100%;
+        position: fixed;
+        z-index: 12;
+            
+    }
+    .logo{
+       font-family: 'Aclonica';
+       font-size: 25px;
+       padding: 50px;
+       margin-left: 50px;
+       
+    }
+    .logo a{
+        color: rgb(229, 225, 225);
+        text-decoration: none;
+    }
+    .nav_bar{
+        font-family: 'poppins';
+        font-size: 20px;
+        float: right;
+        list-style: none;
+    }
+    .nav_bar li{
+        display: inline-block;
+    }
+    .nav_bar li a{
+        padding: 15px;
+    }
+    .nav_bar li a:hover{
+        background: #141414;
+        color: rgb(253, 250, 250);
+        border: 1px solid #000;
+        border-radius: 5px;
+        border-width: 2px;
+    }
+    body{
+   background-image: url("https://images.unsplash.com/photo-1615592389070-bcc97e05ad01?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"); 
+     background-size: 1600px, 650px;
+     background-repeat: no-repeat;
+    }
+</style>
+<body>
+    <header>
+        <div class="logo">
+    <a href="index.html">AnimeWeb...</a>
+    <div class="nav_bar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="popular.html">Popular</a></li>
+            <li><a href="https://www.pvrcinemas.com/">Book show</a></li>
+            <li><a href="login.html">Sign up|log in</a></li>
+        </ul>
+    </div>
+        </div> 
+        <hr>
+            <hr>     
+    </header>
+   <div class="hero">
+    <div class="form-box">
+        <div class="button-box">
+            <div id="btn"></div>
+         <button type="button" class="toggle-btn">Log In</button>
+         <button type="button" class="toggle-btn">Sign Up</button>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/"><img src="https://img.icons8.com/ios/250/000000/instagram-new.png"></a>
+            <a href="https://twitter.com/i/flow/login"><img src="https://cdn-icons-png.flaticon.com/512/60/60580.png"></a>
+            <a href="https://www.facebook.com/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3vl6c9OziaPpB59cXgJdm1Bfyrx_Tlvjv9Q&usqp=CAU"></a>
+        </div> 
+        <form class="input-group">
+        <input type="text" class="input-feild" placeholder="User Id" required>
+        <input type="password" class="input-feild" placeholder="Enter Password" required>
+        <input type="checkbox" class="chech-box"><span>Save Password</span>
+        <a href="#"><button type="submit" class="submit-btn">Log In</button></a>
+        </form>
+    </div>
+   </div> 
+</body>
+</html>
+
+
+
+
+
+

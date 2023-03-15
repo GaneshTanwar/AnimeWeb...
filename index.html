@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>MangaWeb</title>
+    <link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  </head>
+  <style>
+    *{
+        color: #fff;
+    }
+    .header{
+        height: 120px;
+        background: rgba(0, 0, 0,7);
+        width: 100%;
+        position: fixed;
+        z-index: 12;
+            
+    }
+    .logo{
+       font-family: 'Aclonica';
+       font-size: 25px;
+       padding: 50px;
+       margin-left: 50px;
+       
+    }
+    .logo a{
+        color: #fff;
+        text-decoration: none;
+    }
+    .nav_bar{
+        font-family: 'poppins';
+        font-size: 20px;
+        float: right;
+        list-style: none;
+    }
+    .nav_bar li{
+        display: inline-block;
+    }
+    .nav_bar li a{
+        padding: 15px;
+    }
+    .nav_bar li a:hover{
+        background: #3c3b3b;
+        color: #fff;
+        border: 1px solid #000;
+        border-radius: 5px;
+        border-width: 2px;
+    }
+    .carousel-item img{
+        -webkit-backdrop-size: cover;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        width: auto;
+        height: 100vh;
+        filter: brightness(80%);
+    }
+    .box{
+        background: rgba(0,0,0,0.5);
+        width: 100%;
+        padding: 25px;
+    }
+    .box p{
+        text-align: justfy;
+    }
+    .heading{
+    text-align: center;
+    color: var(--red);
+    margin-bottom: 3rem;
+    font-size: 4rem;
+
+  }
+  .anime{
+    padding: 5rem;
+  }
+  .anime .box{
+    width: 299px;
+    height: 168px;
+  }
+  #bcm{
+    background-image: url("https://wallpaperaccess.com/full/754632.jpg");
+  }
+  .maybe{
+    color: rgb(184, 178, 178);
+  }
+  .pair{
+    display: flex;
+    font-size: xx-large;
+    padding: 55px;
+    }
+    .footer {
+     background: #181716;
+     padding-top: 90px;
+     margin-top: 90px;
+}
+ .footer h2 {
+    color: #fff;
+     font-size: 40px;
+     line-height: 40px;
+     text-align: center;
+}
+ .footer .address h3 {
+     color: #fff;
+     font-size: 25px;
+     line-height: 35px;
+     font-weight: 500;
+     text-transform: uppercase;
+     padding-bottom: 20px;
+     padding-bottom: 3px;
+     border-bottom: #ff0000 solid 4px;
+     margin-bottom: 20px;
+     width: 160px;
+}
+ .location_section {
+     background-color: #fff;
+     margin-bottom: 40px;
+     border-radius: 10px;
+     padding: 20px 35px;
+}
+ .news {
+    padding-bottom: 50px;
+     padding-top: 15px;
+}
+ .news .newslatter {
+     padding: 14px 15px;
+     box-shadow: inherit;
+     width: 70%;
+     font-size: 19px;
+}
+ .submit {
+    padding: 14px 45px;
+     border: #f00 solid 1px;
+     background: #f00;
+     color: #fff;
+     margin-left: -5px;
+     font-weight: 500;
+     font-size: 19px;
+     max-width: 271px;
+     width: 100%;
+}
+ .submit:hover {
+     background: #d2cece;
+     border: #d2cece solid 1px;
+     color: #f00;
+}
+ ul.social_link {
+    padding-bottom: 35px;
+     padding-top: 7px;
+     display: block;
+}
+ ul.social_link li {
+    display: inline-block;
+     padding-right: 4px;
+}
+ ul.social_link li a img {
+    width: 30px;
+     height: 30px;
+}
+ ul.social_link li a img:hover {
+     background-color: #fe0000;
+     border-radius: 20px;
+}
+ ul.Menu_footer li{
+    padding-bottom: 5px;
+     display: block;
+     color: #3e7f21;
+}
+ ul.Menu_footer li a {
+     display: block;
+     color: #fff;
+     font-size: 17px;
+     padding-left: 16px;
+     margin-top: -27px;
+}
+ ul.Menu_footer li a:hover{
+     color: #ff0000;
+}
+ ul.Links_footer {
+     list-style: none;
+     margin: 0;
+     padding: 0;
+     width: 100%;
+     float: left;
+}
+ ul.Links_footer li a {
+     display: block;
+     color: #fff;
+     font-size: 17px;
+     padding-left: 16px;
+     margin-top: -27px;
+}
+ ul.Links_footer li a:hover{
+     color: #ff0000;
+}
+ ul.Links_footer li {
+     padding-bottom: 5px;
+     color: #3e7f21;
+     display: block;
+}
+ ul.loca li {
+     color: #fff;
+     padding-bottom: 10px;
+     display: flex;
+     font-size: 16px;
+     flex-wrap: wrap;
+}
+ ul.loca li a {
+     padding-right: 16px;
+     color: #fff;
+     margin-top: 4px;
+}
+ .copyright {
+     padding: 20px 0px;
+     margin-top: 55px;
+     background-color: #fff;
+}
+ .copyright p {
+     color: #000;
+     font-size: 18px;
+     line-height: 22px;
+     text-align: center;
+     border-top: #fff solid 1px;
+}
+ .copyright a {
+     color: #000;
+}
+ .copyright a:hover {
+     color: #f00;
+}
+  </style>
+
+<body id="bcm">
+    <header>
+        <div class="logo">
+    <a href="index.html">AnimeWeb...</a>
+    <div class="nav_bar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="popular.html">Popular</a></li>
+            <li><a href="https://www.pvrcinemas.com/">Book show</a></li>
+            <li><a href="login.html">Sign up|log in</a></li>
+        </ul>
+    </div>
+        </div> 
+        <hr>
+             
+    </header>
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="https://wallpaperaccess.com/full/8485559.png" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                  <div class="box">
+                <h1>Cyberpunk: Edgerunners</h1>
+                <p>In a dystopia overrun by corruption, crime, and cybernetic implants, an impulsive but talented street kid named David, after losing everything he has in a drive-by shooting, makes the choice to survive on the wrong side of the law as an "edgerunner": a high-tech, black market mercenary also known as a "cyberpunk".</p>
+                  </div>
+              </div>
+            </div>
+          <div class="carousel-item">
+            <img src="https://wallpaperaccess.com/full/7151512.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <div class="box">  
+              <h1>Demon Slayer: Kimetsu no Yaiba (Season 2)</h1>
+              <p>THaving become a big hit all over the world recently, Demon Slayer: Kimetsu no Yaiba (鬼滅の刃) is entering the new part after the first season in 2019 and the sequel movie in 2020. The greatest dark-fantasy anime series re-started with the season 2 titled Demon Slayer: Kimetsu no Yaiba Entertainment District Arc from December, 2021. The greater part of the season airs in winter of 2022, so this list includes it. You can see the new adventure of Tanjiro and the emergence of a new Hashira.</p>
+                </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://c4.wallpaperflare.com/wallpaper/556/140/961/chainsaw-man-denji-chainsaw-man-tatsukifujimoto-mappa-building-hd-wallpaper-preview.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <div class="box">
+              <h1>Chainsaw Man</h1>
+              <p>The world is one ravaged by Devils, otherworldly monsters who feed on human fea. Despite their antagonistic nature, humans can actually form alliances with these Devils and gain powers of their own. The protagonist, a downtrodden young man named Denji, works to clear his father's massive debt to the yakuza.</p>
+                </div>
+              </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://img3.hulu.com/user/v3/artwork/02a3c8c0-4f1d-4610-bbb4-5b8e9468d7b1?base_image_bucket_name=image_manager&base_image=de2a4ae9-9153-4f31-9bf0-84a611e8c3d0&size=1280x720&format=jpeg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+              <div class="box">
+            <h1>Bleach: Thousand-Year Blood War</h1>
+            <p>The thousand-year blood war arc begins after the shocking Soul Society goes on the offensive and covers the world in a war that reached deep into the Soul Palace itself. During the war, several new forms are found, and new abilities learned of on both sides including Quincy's final form Vollständig.</p>
+              </div>
+          </div>
+      </div>
+
+      
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="end">
+      </div>&nbsp
+      <div>
+        <table>
+            <tr>
+                <th>
+                    <a href="https://www.instagram.com/"><img style=" width: 60x;
+                    margin-top:12px;
+                    margin-left: 300px;
+                    height: 60px;
+                    max-width: 50px;
+                    border-radius: 50%;"src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png" width="100%" height="200px" alt=""></a>
+                </th>
+                <th>
+                    <a href="https://telegram.org/"><img style=" width: 60x;
+                    margin-top:12px;
+                    margin-left: 400px;
+                    height: 60px;
+                    max-width: 50px;
+                    border-radius: 50%;"src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/2048px-Telegram_logo.svg.png" width="400px" height="200px" alt=""></a>
+                </th>
+                <th>
+                    <a href="https://www.facebook.com/"><img style=" width: 60x;
+                    margin-top:12px;
+                    margin-left: 400px;
+                    height: 60px;
+                    max-width: 50px;
+                    border-radius: 50%;"src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/2048px-Facebook_f_logo_%282019%29.svg.png" width="400px" height="200px" alt=""></a>
+                </th>
+            </tr>
+        </table>
+      </div>
+      <section class="anime" id="anime">
+        <h1 class="heading">Anime</h1>
+        <div class="swiper anime-slide">
+          <div class="swiper-wrapper">
+        </div>
+        </div>
+        
+        <table>
+          <tr>
+              <th>
+                  <img src="https://m.media-amazon.com/images/I/71GqUgwo-eL._SY679_.jpg" width="100%" height="200px" alt="">
+              </th>
+              <th></th>
+              <th></th>
+              <th>
+                  <img src="https://i.ytimg.com/vi/8qIOhc0MQfs/maxresdefault.jpg" width="400px" height="200px" alt="">
+              </th>
+              <th></th>
+              <th></th>
+              <th>
+                  <img src="https://static.pupperish.com/images/fvJXgPzFIOMK_1854_700.jpg" width="400px" height="200px" alt="">
+              </th>
+              <th></th>
+              <th></th>
+            
+              <th>
+                  <img src="https://www.themarysue.com/wp-content/uploads/2022/07/light-ryuk-death-note.jpeg?fit=1200%2C630" width="400px" height="200px" alt="">
+              </th>
+          </tr>
+      </table>
+          <h3>Death Note. (9.98 / 10)</h3>
+          <p>Light Yagami (Tatsuya Fujiwara) is a normal, undistinguished college student -- that is, until he discovers an odd notebook lying on the ground. He soon discovers that the notebook has magic powers: If someone's name is written on it while the writer imagines that person's face, he or she will die. Intoxicated with his new godlike power, Light kills those he deems unworthy of life. But a mysterious detective known only as L (Ken'ichi Matsuyama) becomes determined to put a stop to his reign.</p>
+          <a href="#" class="btn">Download</a>
+
+      <table>
+        <tr>
+            <th>
+                <img src="https://m.media-amazon.com/images/I/61eyyyGXMKL._SL1500_.jpg" width="100%" height="200px" alt="">
+            </th>
+            <th></th>
+            <th></th>
+            <th>
+                <img src="https://www.gamersdecide.com/sites/default/files/styles/news_images/public/fmacharacters-11_1.png" width="400px" height="200px" alt="">
+            </th>
+            <th></th>
+            <th></th>
+            <th>
+                <img src="https://i0.wp.com/i.ytimg.com/vi/deoRVeQXLXg/maxresdefault.jpg?w=780&ssl=1" width="400px" height="200px" alt="">
+            </th>
+            <th></th>
+            <th></th>
+          
+            <th>
+                <img src="https://static1.cbrimages.com/wordpress/wp-content/uploads/2019/09/FMA-Scariest-Scenes-featured-image.jpg" width="400px" height="200px" alt="">
+            </th>
+            
+        </tr>
+    </table>
+        <h3>Fullmetal Alchemist: Brotherhood. (9.59 / 10)</h3>
+        <p>Two brothers search for a Philosopher's Stone after an attempt to revive their deceased mother goes awry and leaves them in damaged physical forms. Two brothers lose their mother to an incurable disease. With the power of "alchemy", they use taboo knowledge to resurrect her.</p>
+        <a href="#" class="btn">Download</a>
+
+        <table>
+          <tr>
+              <th>
+                  <img src="https://www.commonsensemedia.org/sites/default/files/styles/ratio_16_9_small/public/screenshots/csm-tv/naruto-ss3.jpg" width="100%" height="200px" alt="">
+              </th>
+              <th></th>
+              <th></th>
+              <th>
+                  <img src="https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/e6b2cd29a5ff62f4591d3b299007e24e.jpe" width="400px" height="200px" alt="">
+              </th>
+              <th></th>
+              <th></th>
+              <th>
+                  <img src="https://sportshub.cbsistatic.com/i/2022/10/03/de10a8ab-49f0-4a7f-b23a-263c71e47812/naruto-20th-anniversary-anime-naruto-sasuke.jpg" width="400px" height="200px" alt="">
+              </th>
+              <th></th>
+              <th></th>
+            
+              <th>
+                  <img src="https://i.pinimg.com/736x/a7/b0/77/a7b0775a1422110a0a6252dade9df21e.jpg" width="400px" height="200px" alt="">
+              </th>
+          </tr>
+      </table>
+          <h3>Naruto. (9.31 / 10)</h3>
+          <p>Naruto is a Japanese manga series written and illustrated by Masashi Kishimoto. It tells the story of Naruto Uzumaki, a young ninja who seeks recognition from his peers and dreams of becoming the Hokage, the leader of his village.</p>
+          <a href="#" class="btn">Download</a>
+
+          <table>
+            <tr>
+                <th>
+                    <img src="https://m.media-amazon.com/images/I/81dH7-pkjiL._SL1500_.jpg" width="100%" height="200px" alt="">
+                </th>
+                <th></th>
+                <th></th>
+                <th>
+                    <img src="https://animeclap.com/wp-content/uploads/2021/04/attack-on-titan-season-4-best-moments.jpg" width="400px" height="200px" alt="">
+                </th>
+                <th></th>
+                <th></th>
+                <th>
+                    <img src="https://i.ytimg.com/vi/8UesCB8Cp6o/maxresdefault.jpg" width="400px" height="200px" alt="">
+                </th>
+                <th></th>
+                <th></th>
+              
+                <th>
+                    <img src="https://vgculturehq.com/wp-content/uploads/2018/07/attack-on-titan-carla-yaeger-death.jpg?x34136" width="400px" height="200px" alt="">
+                </th>
+            </tr>
+        </table>
+            <h3>Attack on Titan. (9.74 / 10)</h3>
+            <p>After his hometown is destroyed and his mother is killed, young Eren Jaeger vows to cleanse the earth of the giant humanoid Titans that have brought humanity to the brink of extinction.Humans are nearly exterminated by giant creatures called Titans.</p>
+            <a href="#" class="btn">Download</a>
+
+            <table>
+              <tr>
+                  <th>
+                      <img src="https://m.media-amazon.com/images/I/6140jGJtAwL.jpg" width="100%" height="200px" alt="">
+                  </th>
+                  <th></th>
+                  <th></th>
+                  <th>
+                      <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/cff0129d-9f6a-4d33-b551-8c395a3dab0a/d885kvy-e4ea384c-799c-41c3-b766-b4f6c8a55608.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2NmZjAxMjlkLTlmNmEtNGQzMy1iNTUxLThjMzk1YTNkYWIwYVwvZDg4NWt2eS1lNGVhMzg0Yy03OTljLTQxYzMtYjc2Ni1iNGY2YzhhNTU2MDgucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.jxxEGRBNzildCWZwStAm4ffCYkrAAnI-XxVHNdUg_hE" width="400px" height="200px" alt="">
+                  </th>
+                  <th></th>
+                  <th></th>
+                  <th>
+                      <img src="https://imgix.ranker.com/user_node_img/50091/1001800893/original/trunks-slicing-freeza-in-half-photo-u1?auto=format&q=60&fit=crop&fm=pjpg&dpr=2&w=375" width="400px" height="200px" alt="">
+                  </th>
+                  <th></th>
+                  <th></th>
+                
+                  <th>
+                      <img src="https://dotandline.net/wp-content/uploads/2018/03/1_O5ABYdil4VVXnKqUvFNrZQ-1210x642.jpeg" width="400px" height="200px" alt="">
+                  </th>
+              </tr>
+          </table>
+              <h3>Dragon Ball Z. (9.15 / 10)</h3>
+              <p>Son Goku, the world's most powerful fighter and guardian of justice, must protect the Earth from the Saiyan Warriors working under the tyrannical space warlord Frieza. Against all odds, Goku must team up with his longtime nemesis Piccolo to save everyone he loves from these new, unpredictable threats to humanity.</p>
+              <a href="#" class="btn">Download</a>            
+      </section>
+      <footr>
+        <div class="footer ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2>Contact Us</h2>
+                    </div>
+                    <div class="col-md-10 offset-md-1">
+                        <form class="news">
+                            <input class="newslatter" placeholder="Enter Your Email" type="text" name="Enter Your Email">
+                            <button class="submit">Subscribe</button>
+                        </form>
+                    </div>
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 ">
+                        <div class="row">
+                            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 ">
+                                <div class="address">
+                                    <ul class="social_link">
+                                       
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                <div class="address">
+                                    <h3>Quick links</h3>
+                                    <ul>
+                                        <li><a href="index.html" style="text-decoration: none;color: #fff;">Home</a></li>
+                                        <li ><a href="popular.html"  style="text-decoration: none;color: #fff;" >Popular</a></li>
+                                        <li><a href="https://www.pvrcinemas.com/"  style="text-decoration: none;color: #fff;">Bookshow</a></li>
+                                        <li> <a href="login.html"  style="text-decoration: none;color: #fff;">log in|Sign up</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6 ">
+                                <div class="address">
+                                    <h3>Contact us</h3>
+                                    <ul>
+                                        
+                                        <li>
+                                            Mail: ganesh_226002@saitm.org</li>
+                                        <li>
+                                            Phone: +91999185xxxx</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <div class="container">
+                    <p>© All right reserved.<a href="index.html">Refresh</a></p>
+                </div>
+            </div>
+        </div>
+    </footr>
+</body>
+</html>
